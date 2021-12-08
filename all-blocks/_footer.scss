@@ -1,0 +1,96 @@
+footer {
+    background-color: #2D314D;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 60px!important;
+    margin-bottom: 60px!important;
+    padding-top: 48px!important;
+    padding-bottom: 48px!important;
+    .follow {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &__media {
+            margin-top: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           &__img {
+               margin-right: 10px;
+                &:hover {
+                    color: #30C88F;
+                }
+            }
+        }
+    }
+    .contact {
+        h1 {
+            font-size: 15px;
+            line-height: 26px;
+            letter-spacing: -0.234375px;
+            color: #FFFFFF;
+            &:hover {
+                color: #30C88F;
+            }
+        }
+        
+    }
+    .more {
+        h1 {
+            font-size: 15px;
+            line-height: 26px;
+            letter-spacing: -0.234375px;
+            color: #FFFFFF;
+            &:hover {
+                color: #30C88F;
+            }
+        }
+        
+    }
+    .all {
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        align-items: flex-end;
+        h2 {
+            margin-top: 20px;
+            font-size: 15px;
+            line-height: 26px;
+            text-align: right;
+            letter-spacing: -0.234375px;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+        }
+
+    }
+}
+@media screen and (max-width: 733px ) {
+    footer {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+        .follow {
+            width: 100%;
+            align-items: center;
+        }
+        .contact {
+            h1 {
+                font-size: 14px; 
+                display: inline;
+            }  
+        }
+        .more {
+            width: 100%;
+            border: 1px solid red;
+            align-items: center;
+        }
+        .all {
+            width: 100%;
+            align-items: center;
+        }
+    }
+}

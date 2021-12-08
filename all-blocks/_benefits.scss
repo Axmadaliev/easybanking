@@ -1,0 +1,115 @@
+.benefits {
+    background-color:  #F4F5F7;
+    padding-top: 76px;
+    padding-bottom: 76px;
+    &__title {
+        font-style: normal;
+        font-weight: 100;
+        font-size: 40px;
+        line-height: 64px;
+        letter-spacing: -0.714286px;
+        color: #2D314D;
+    }
+    &__desc {
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.28125px;
+        color: #9597A5;
+        width: 45%;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        }
+        
+    
+}
+.cards {
+    margin-top: 50px;
+    &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        &::before  {
+            content: "";
+            width: 72px;
+            height: 72px;
+            background:url("../img/online.svg") no-repeat;
+            background-size: 100% 100%;
+            margin-bottom: 20px;
+        }
+           
+        &__title {
+            font-style: normal;
+            font-weight: 100;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -0.428571px;
+            color: #2D314D;
+        }
+        &__desc {
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: -0.25px;
+            color: #9597A5;
+        }
+    }
+ 
+}
+.first::before  {
+        content: "";
+        width: 72px;
+        height: 72px;
+        background:url("../img/online.svg") no-repeat;
+        background-size: 100% 100%;
+        margin-bottom: 20px;
+        @media
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (   min--moz-device-pixel-ratio: 2),
+        only screen and (     -o-min-device-pixel-ratio: 2/1),
+        only screen and (        min-device-pixel-ratio: 2),
+        only screen and (                min-resolution: 192dpi),
+        only screen and (                min-resolution: 2dppx) 
+        {    
+        .section1 {
+            background: url(../img//logo/logo@2x.png);
+        }
+    }
+}
+@media screen and (max-width: 1077px) {
+    .benefits {
+        &__title, &__desc {
+            text-align: center;
+            width: 100%;
+        }
+  
+        
+    .cards {
+        flex-wrap: wrap;
+        &__items {
+            width: 50%;
+            align-items: center;
+            &__desc {
+                text-align: center;
+            }
+         
+        }
+     
+    }
+}
+}
+@media screen and (max-width: 730px) {
+    .benefits {
+        .cards {
+            &__items {
+                margin-top: 10px;
+                padding-top: 10px;
+                width: 100%;
+                box-shadow: 0 0 4px rgb(209, 209, 209);
+            }
+            
+        }
+    }
+}
